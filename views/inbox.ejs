@@ -20,6 +20,9 @@
       <div id="new-message-container">
         <a href="#">+</a>
       </div>
+      <div class="new-message-container" onclick="openModal()">
+        <a href="#">+</a>
+      </div>
       <div id="chat-title">
         <span>Sumit</span>
         <img src="./images/trash.png" alt="Delete Conversation" />
@@ -45,20 +48,6 @@
       </div>
     </div>
 
-    <div class="modal-wrapper">
-      <div class="modal">
-        <a href="#" class="modal-close">+</a>
-        <div class="modal-title">
-          <h2>Create New Conversation</h2>
-        </div>
-        <div class="modal-body">
-          <form>
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Username" />
-            <input type="button" value="Submit" />
-          </form>
-        </div>
-      </div>
-    </div>
+    <%- include('./partials/add-conversation-modal.ejs'); %>
   </body>
 </html>
